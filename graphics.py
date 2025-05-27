@@ -138,9 +138,9 @@ class Maze:
         sleep(0.05)
 
     def __break_entrance_and_exit(self):
-        self.__cells[0][0].has_bottom_wall=False
+        self.__cells[0][0].has_top_wall=False
         self.__draw_cell(0,0)
-        self.__cells[-1][-1].has_top_wall=False
+        self.__cells[-1][-1].has_bottom_wall=False
         self.__draw_cell(len(self.__cells)-1,len(self.__cells[0])-1)
 
     def __break_walls_r(self, i, j):
