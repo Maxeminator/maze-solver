@@ -1,12 +1,9 @@
-from graphics import Window, Line, Point
+from graphics import Window, Maze
 
 def main():
 
     win=Window(800,600)
-    point_1=Point(50,50)
-    point_2=Point(100,200)
-    line=Line(point_1,point_2)
-    win.draw_line(line,"red")
+    maze_test=Maze(10,10,10,10,10,10,win)
     win.wait_for_close()
     
 if __name__ == "__main__":
